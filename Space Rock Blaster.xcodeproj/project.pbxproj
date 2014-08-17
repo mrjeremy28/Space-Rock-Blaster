@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3625E7C919A1567B00197893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3625E7C819A1567B00197893 /* Foundation.framework */; };
+		3625E7CB19A1567B00197893 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3625E7CA19A1567B00197893 /* CoreGraphics.framework */; };
+		3625E7CD19A1567B00197893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3625E7CC19A1567B00197893 /* UIKit.framework */; };
+		3625E7CF19A1567B00197893 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3625E7CE19A1567B00197893 /* SpriteKit.framework */; };
+		3625E7D519A1567C00197893 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3625E7D319A1567C00197893 /* InfoPlist.strings */; };
+		3625E7D719A1567C00197893 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E7D619A1567C00197893 /* main.m */; };
+		3625E7DB19A1567C00197893 /* MJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E7DA19A1567C00197893 /* MJAppDelegate.m */; };
+		3625E7DE19A1567C00197893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3625E7DC19A1567C00197893 /* Main.storyboard */; };
+		3625E7E119A1567C00197893 /* MJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E7E019A1567C00197893 /* MJViewController.m */; };
+		3625E7E419A1567C00197893 /* MJMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E7E319A1567C00197893 /* MJMyScene.m */; };
+		3625E7E619A1567C00197893 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3625E7E519A1567C00197893 /* Spaceship.png */; };
+		3625E7E819A1567C00197893 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3625E7E719A1567C00197893 /* Images.xcassets */; };
+		3625E7EF19A1567C00197893 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3625E7EE19A1567C00197893 /* XCTest.framework */; };
+		3625E7F019A1567C00197893 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3625E7C819A1567B00197893 /* Foundation.framework */; };
+		3625E7F119A1567C00197893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3625E7CC19A1567B00197893 /* UIKit.framework */; };
+		3625E7F919A1567C00197893 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3625E7F719A1567C00197893 /* InfoPlist.strings */; };
+		3625E7FB19A1567C00197893 /* Space_Rock_BlasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E7FA19A1567C00197893 /* Space_Rock_BlasterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3625E7F219A1567C00197893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3625E7BD19A1567B00197893 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3625E7C419A1567B00197893;
+			remoteInfo = "Space Rock Blaster";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3625E7C519A1567B00197893 /* Space Rock Blaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Rock Blaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3625E7C819A1567B00197893 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3625E7CA19A1567B00197893 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3625E7CC19A1567B00197893 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3625E7CE19A1567B00197893 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3625E7D219A1567C00197893 /* Space Rock Blaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space Rock Blaster-Info.plist"; sourceTree = "<group>"; };
+		3625E7D419A1567C00197893 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3625E7D619A1567C00197893 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3625E7D819A1567C00197893 /* Space Rock Blaster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Space Rock Blaster-Prefix.pch"; sourceTree = "<group>"; };
+		3625E7D919A1567C00197893 /* MJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJAppDelegate.h; sourceTree = "<group>"; };
+		3625E7DA19A1567C00197893 /* MJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJAppDelegate.m; sourceTree = "<group>"; };
+		3625E7DD19A1567C00197893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3625E7DF19A1567C00197893 /* MJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJViewController.h; sourceTree = "<group>"; };
+		3625E7E019A1567C00197893 /* MJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJViewController.m; sourceTree = "<group>"; };
+		3625E7E219A1567C00197893 /* MJMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJMyScene.h; sourceTree = "<group>"; };
+		3625E7E319A1567C00197893 /* MJMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJMyScene.m; sourceTree = "<group>"; };
+		3625E7E519A1567C00197893 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		3625E7E719A1567C00197893 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3625E7ED19A1567C00197893 /* Space Rock BlasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space Rock BlasterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3625E7EE19A1567C00197893 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3625E7F619A1567C00197893 /* Space Rock BlasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space Rock BlasterTests-Info.plist"; sourceTree = "<group>"; };
+		3625E7F819A1567C00197893 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3625E7FA19A1567C00197893 /* Space_Rock_BlasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_Rock_BlasterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3625E7C219A1567B00197893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3625E7CB19A1567B00197893 /* CoreGraphics.framework in Frameworks */,
+				3625E7CD19A1567B00197893 /* UIKit.framework in Frameworks */,
+				3625E7CF19A1567B00197893 /* SpriteKit.framework in Frameworks */,
+				3625E7C919A1567B00197893 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3625E7EA19A1567C00197893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3625E7EF19A1567C00197893 /* XCTest.framework in Frameworks */,
+				3625E7F119A1567C00197893 /* UIKit.framework in Frameworks */,
+				3625E7F019A1567C00197893 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3625E7BC19A1567B00197893 = {
+			isa = PBXGroup;
+			children = (
+				3625E7D019A1567B00197893 /* Space Rock Blaster */,
+				3625E7F419A1567C00197893 /* Space Rock BlasterTests */,
+				3625E7C719A1567B00197893 /* Frameworks */,
+				3625E7C619A1567B00197893 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3625E7C619A1567B00197893 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3625E7C519A1567B00197893 /* Space Rock Blaster.app */,
+				3625E7ED19A1567C00197893 /* Space Rock BlasterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3625E7C719A1567B00197893 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3625E7C819A1567B00197893 /* Foundation.framework */,
+				3625E7CA19A1567B00197893 /* CoreGraphics.framework */,
+				3625E7CC19A1567B00197893 /* UIKit.framework */,
+				3625E7CE19A1567B00197893 /* SpriteKit.framework */,
+				3625E7EE19A1567C00197893 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3625E7D019A1567B00197893 /* Space Rock Blaster */ = {
+			isa = PBXGroup;
+			children = (
+				3625E7D919A1567C00197893 /* MJAppDelegate.h */,
+				3625E7DA19A1567C00197893 /* MJAppDelegate.m */,
+				3625E7DC19A1567C00197893 /* Main.storyboard */,
+				3625E7DF19A1567C00197893 /* MJViewController.h */,
+				3625E7E019A1567C00197893 /* MJViewController.m */,
+				3625E7E219A1567C00197893 /* MJMyScene.h */,
+				3625E7E319A1567C00197893 /* MJMyScene.m */,
+				3625E7E519A1567C00197893 /* Spaceship.png */,
+				3625E7E719A1567C00197893 /* Images.xcassets */,
+				3625E7D119A1567C00197893 /* Supporting Files */,
+			);
+			path = "Space Rock Blaster";
+			sourceTree = "<group>";
+		};
+		3625E7D119A1567C00197893 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3625E7D219A1567C00197893 /* Space Rock Blaster-Info.plist */,
+				3625E7D319A1567C00197893 /* InfoPlist.strings */,
+				3625E7D619A1567C00197893 /* main.m */,
+				3625E7D819A1567C00197893 /* Space Rock Blaster-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3625E7F419A1567C00197893 /* Space Rock BlasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				3625E7FA19A1567C00197893 /* Space_Rock_BlasterTests.m */,
+				3625E7F519A1567C00197893 /* Supporting Files */,
+			);
+			path = "Space Rock BlasterTests";
+			sourceTree = "<group>";
+		};
+		3625E7F519A1567C00197893 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3625E7F619A1567C00197893 /* Space Rock BlasterTests-Info.plist */,
+				3625E7F719A1567C00197893 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3625E7C419A1567B00197893 /* Space Rock Blaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3625E7FE19A1567C00197893 /* Build configuration list for PBXNativeTarget "Space Rock Blaster" */;
+			buildPhases = (
+				3625E7C119A1567B00197893 /* Sources */,
+				3625E7C219A1567B00197893 /* Frameworks */,
+				3625E7C319A1567B00197893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Rock Blaster";
+			productName = "Space Rock Blaster";
+			productReference = 3625E7C519A1567B00197893 /* Space Rock Blaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3625E7EC19A1567C00197893 /* Space Rock BlasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3625E80119A1567C00197893 /* Build configuration list for PBXNativeTarget "Space Rock BlasterTests" */;
+			buildPhases = (
+				3625E7E919A1567C00197893 /* Sources */,
+				3625E7EA19A1567C00197893 /* Frameworks */,
+				3625E7EB19A1567C00197893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3625E7F319A1567C00197893 /* PBXTargetDependency */,
+			);
+			name = "Space Rock BlasterTests";
+			productName = "Space Rock BlasterTests";
+			productReference = 3625E7ED19A1567C00197893 /* Space Rock BlasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3625E7BD19A1567B00197893 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MJ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = MrJeremy;
+				TargetAttributes = {
+					3625E7EC19A1567C00197893 = {
+						TestTargetID = 3625E7C419A1567B00197893;
+					};
+				};
+			};
+			buildConfigurationList = 3625E7C019A1567B00197893 /* Build configuration list for PBXProject "Space Rock Blaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3625E7BC19A1567B00197893;
+			productRefGroup = 3625E7C619A1567B00197893 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3625E7C419A1567B00197893 /* Space Rock Blaster */,
+				3625E7EC19A1567C00197893 /* Space Rock BlasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3625E7C319A1567B00197893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3625E7D519A1567C00197893 /* InfoPlist.strings in Resources */,
+				3625E7E819A1567C00197893 /* Images.xcassets in Resources */,
+				3625E7E619A1567C00197893 /* Spaceship.png in Resources */,
+				3625E7DE19A1567C00197893 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3625E7EB19A1567C00197893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3625E7F919A1567C00197893 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3625E7C119A1567B00197893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3625E7D719A1567C00197893 /* main.m in Sources */,
+				3625E7E419A1567C00197893 /* MJMyScene.m in Sources */,
+				3625E7E119A1567C00197893 /* MJViewController.m in Sources */,
+				3625E7DB19A1567C00197893 /* MJAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3625E7E919A1567C00197893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3625E7FB19A1567C00197893 /* Space_Rock_BlasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3625E7F319A1567C00197893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3625E7C419A1567B00197893 /* Space Rock Blaster */;
+			targetProxy = 3625E7F219A1567C00197893 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3625E7D319A1567C00197893 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3625E7D419A1567C00197893 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3625E7DC19A1567C00197893 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3625E7DD19A1567C00197893 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3625E7F719A1567C00197893 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3625E7F819A1567C00197893 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3625E7FC19A1567C00197893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3625E7FD19A1567C00197893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3625E7FF19A1567C00197893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Rock Blaster/Space Rock Blaster-Prefix.pch";
+				INFOPLIST_FILE = "Space Rock Blaster/Space Rock Blaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3625E80019A1567C00197893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Rock Blaster/Space Rock Blaster-Prefix.pch";
+				INFOPLIST_FILE = "Space Rock Blaster/Space Rock Blaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3625E80219A1567C00197893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Space Rock Blaster.app/Space Rock Blaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Rock Blaster/Space Rock Blaster-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Space Rock BlasterTests/Space Rock BlasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3625E80319A1567C00197893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Space Rock Blaster.app/Space Rock Blaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Rock Blaster/Space Rock Blaster-Prefix.pch";
+				INFOPLIST_FILE = "Space Rock BlasterTests/Space Rock BlasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3625E7C019A1567B00197893 /* Build configuration list for PBXProject "Space Rock Blaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3625E7FC19A1567C00197893 /* Debug */,
+				3625E7FD19A1567C00197893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3625E7FE19A1567C00197893 /* Build configuration list for PBXNativeTarget "Space Rock Blaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3625E7FF19A1567C00197893 /* Debug */,
+				3625E80019A1567C00197893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3625E80119A1567C00197893 /* Build configuration list for PBXNativeTarget "Space Rock BlasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3625E80219A1567C00197893 /* Debug */,
+				3625E80319A1567C00197893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3625E7BD19A1567B00197893 /* Project object */;
+}
