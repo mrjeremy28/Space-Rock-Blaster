@@ -9,16 +9,18 @@
 #import <Foundation/Foundation.h>
 
 static const int MJProjectileSpeed = 400;
-static const int MJSpaceDogMinSpeed = -100;
-static const int MJSpaceDogMaxSpeed = -50;
+static const int MJFlyingRockMinSpeed = -100;
+static const int MJFlyingRockMaxSpeed = -50;
 static const int MJMaxLives = 3;
 static const int MJPointsPerHit = 100;
 
+
+
 typedef NS_OPTIONS(uint32_t, MJCollisionCategory) {
-    MJCollisionCategoryEnemy        = 1 << 0,   //0000
-    MJCollisionCategoryProjectile   = 1 << 1,   //0010
+    MJCollisionCategoryRock         = 1 << 0,   //0000
+    MJCollisionCategoryMissle       = 1 << 1,   //0010
     MJCollisionCategoryDebris       = 1 << 2,   //0100
-    MJCollisionCategoryGround       = 1 << 3    //1000
+    MJCollisionCategoryFlyingJet    = 1 << 3    //1000
 };
 
 

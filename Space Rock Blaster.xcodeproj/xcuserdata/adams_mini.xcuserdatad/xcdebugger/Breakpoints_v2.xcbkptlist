@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Space Rock Blaster/MJMainGamePlayScene.m"
-            timestampString = "430116541.277206"
+            timestampString = "430123038.214684"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "-initWithSize:"
             landmarkType = "5">
          </BreakpointContent>

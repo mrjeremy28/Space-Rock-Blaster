@@ -10,4 +10,6 @@
 
 @interface MJFlyingRockNode : SKSpriteNode
 
++ (instancetype) flyingRockAtPosition:(CGPoint)position;
+
 @end

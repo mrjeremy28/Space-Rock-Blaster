@@ -12,7 +12,7 @@
 #import "MJGameOverNode.h"
 #import "MJHudNode.h"
 #import "MJSettings.h"
-
+#import "MJFlyingRockNode.h"
 
 static NSString * const kFighterNodeName = @"movable";
 
@@ -68,6 +68,10 @@ static NSString * const kFighterNodeName = @"movable";
         [background runAction:repeatAction];
 
         
+        self.physicsWorld.gravity = CGVectorMake(0, -9.8);
+        self.physicsWorld.contactDelegate = self;
+
+        
         //add fighterJet Animated
         MJFighterJet *fighterJet = [MJFighterJet fighterAtPosition:(CGPointMake(CGRectGetMidX(self.frame), 60))];
         [fighterJet setName:kFighterNodeName];
@@ -90,6 +94,7 @@ static NSString * const kFighterNodeName = @"movable";
     CGPoint positionInScene = [touch locationInNode:self];
     [self selectNodeForTouch:positionInScene];
     
+    [self shootProjectileTowardsPosition:positionInScene];
     
 //    for (UITouch *touch in touches) {
 //        
@@ -120,15 +125,37 @@ static NSString * const kFighterNodeName = @"movable";
         
         //3 if it is node, then wiggle it
         if([[touchedNode name] isEqualToString:kFighterNodeName]) {
-            [_selectedNode removeAllActions];
-            SKAction *sequence = [SKAction sequence:@[[SKAction rotateByAngle:degToRad(-4.0f) duration:0.1],
-                                                      [SKAction rotateByAngle:0.0 duration:0.1],
-                                                      [SKAction rotateByAngle:degToRad(4.0f) duration:0.1]]];
+//            [_selectedNode removeAllActions];
+//            SKAction *sequence = [SKAction sequence:@[[SKAction rotateByAngle:degToRad(-4.0f) duration:0.1],
+//                                                      [SKAction rotateByAngle:0.0 duration:0.1],
+//                                                      [SKAction rotateByAngle:degToRad(4.0f) duration:0.1]]];
             //[_selectedNode runAction:[SKAction repeatActionForever:sequence] withKey:@"Wiggle"];
+        } else {
+            
+            [self shootProjectileTowardsPosition:touchLocation];
         }
     }
 }
 
+-(void) shootProjectileTowardsPosition:(CGPoint)position {
+//    MJSpaceKittyNode *spaceCat = (MJSpaceKittyNode*)[self childNodeWithName:@"SpaceCat"];
+//    [spaceCat performTap];
+    
+    MJFighterJet *fighterJet = (MJFighterJet *)[self childNodeWithName:kFighterNodeName];
+    
+    MJFighterProjectileNode *projectile = [MJFighterProjectileNode projectileAtPosition:CGPointMake//(fighterJet.position.x, fighterJet.position.y + fighterJet.frame.size.height - 15 )
+                                          (fighterJet.position.x,fighterJet.position.y+20)
+                                           ];
+   // NSLog(@"Fighter at %f",fighterJet.position.x);
+    //NSLog(@"Clicked at %f",position.x);
+   // projectile.position = CGPointMake(100, 100);
+    
+    [self addChild:projectile];
+    
+    [projectile moveTowardsPosition:fighterJet.position];
+   // [self runAction:self.laserSFX];
+    
+}
 - (void) loseLife {
     MJHudNode *hud = (MJHudNode*)[self childNodeWithName:@"HUD"];
     [hud loseLife];
@@ -150,6 +177,7 @@ float degToRad(float degree) {
     // 1.0 is pretty fast
     if (self.timeSinceFighterMoved > self.fighterJetTimeInterval ) {
        // [self moveFighterJet];
+        [self addFlyingRock];
         self.timeSinceFighterMoved = 0;
     }
     self.lastUpdateTimeInterval = currentTime;
@@ -159,6 +187,31 @@ float degToRad(float degree) {
     //[self addChild:projectile];
     
     //[projectile moveTowardsPosition:position];
+    
+}
+
+-(void) addFlyingRock {
+    //    MJSpaceDogNode *spaceDogA = [MJSpaceDogNode spaceDogOfType:MJSpaceDogTypeA];
+    //    spaceDogA.position = CGPointMake(100, 300);
+    //    [self addChild:spaceDogA];
+    //
+    //    MJSpaceDogNode *spaceDogB = [MJSpaceDogNode spaceDogOfType:MJSpaceDogTypeB];
+    //    spaceDogB.position = CGPointMake(200, 300);
+    //    [self addChild:spaceDogB];
+    //
+    NSUInteger randomFlyingRock = [MJSettings randomWithMin:0 max:2];
+    MJFlyingRockNode *FlyingRock = [MJFlyingRockNode flyingRockAtPosition:CGPointMake(25, -100)];
+    
+    float dy = [MJSettings randomWithMin:MJFlyingRockMinSpeed max:MJFlyingRockMaxSpeed];
+    FlyingRock.physicsBody.velocity = CGVectorMake(0,dy);
+    
+    
+    float y = self.frame.size.height + FlyingRock.size.height;
+    float x = [MJSettings randomWithMin:10 + FlyingRock.size.width max:self.frame.size.width - FlyingRock.size.width - 10];
+    
+    FlyingRock.position = CGPointMake(x, y);
+    [self addChild:FlyingRock];
+    
     
 }
 

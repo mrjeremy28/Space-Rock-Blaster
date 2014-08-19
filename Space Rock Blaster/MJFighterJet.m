@@ -7,10 +7,12 @@
 //
 
 #import "MJFighterJet.h"
+#import "MJSettings.h"
+
 
 @implementation MJFighterJet
 + (instancetype) fighterAtPosition:(CGPoint)position {
-    
+   
     MJFighterJet *fighterJetAnimated;
     
     fighterJetAnimated = [self spriteNodeWithImageNamed:@"ship-small_01"];
@@ -18,6 +20,7 @@
     fighterJetAnimated.position = position;
     //fighterJetAnimated.anchorPoint = CGPointMake(1, 1);
     fighterJetAnimated.zPosition = 20;
+    
     //    NSMutableArray *textures = [[NSMutableArray alloc] init];
     NSArray *newTextures;
     
@@ -52,7 +55,7 @@
     
     //[fighterJetAnimated runAction:[SKAction repeatActionForever:animation] withKey:@"animation"];
     
-    
+      [fighterJetAnimated setupPhysicsBody];
    
     return  fighterJetAnimated;
 }
@@ -157,6 +160,44 @@
      return  fighterJetAnimated;
 }
 
+#pragma mark - Physics Properites
+- (void) setupPhysicsBody {
+    //self.physicsBody = [SKPhysicsBody bodyWithPolygonFromPath:(CGPathRef) bodyWithRectangleOfSize:self.frame.size];
+    CGFloat offsetX = self.frame.size.width * self.anchorPoint.x;
+    CGFloat offsetY = self.frame.size.height * self.anchorPoint.y;
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    
+    CGPathMoveToPoint(path, NULL, 19 - offsetX, 73 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 28 - offsetX, 73 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 39 - offsetX, 57 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 39 - offsetX, 37 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 49 - offsetX, 37 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 49 - offsetX, 9 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 30 - offsetX, 9 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 29 - offsetX, 0 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 18 - offsetX, 0 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 18 - offsetX, 7 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 0 - offsetX, 8 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 0 - offsetX, 37 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 9 - offsetX, 39 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 9 - offsetX, 59 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 19 - offsetX, 73 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 32 - offsetX, 72 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 35 - offsetX, 72 - offsetY);
+    CGPathAddLineToPoint(path, NULL, 38 - offsetX, 65 - offsetY);
+    
+    CGPathCloseSubpath(path);
+    
+    self.physicsBody = [SKPhysicsBody bodyWithPolygonFromPath:path];
+    
+    self.physicsBody.affectedByGravity = NO;
+    self.physicsBody.dynamic = NO;
+    self.physicsBody.categoryBitMask = MJCollisionCategoryFlyingJet;
+    self.physicsBody.collisionBitMask = MJCollisionCategoryDebris;
+    self.physicsBody.contactTestBitMask = MJCollisionCategoryRock;
+    
+}
 
 
 @end
