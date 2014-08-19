@@ -7,13 +7,14 @@
 //
 
 #import "MJViewController.h"
-#import "MJMyScene.h"
+#import "MJMainGamePlayScene.h"
+#import "MJIntroScene.h"
 
 @implementation MJViewController
 
-- (void)viewDidLoad
+- (void)viewDidLayoutSubviews
 {
-    [super viewDidLoad];
+    [super viewDidLayoutSubviews];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
@@ -21,11 +22,16 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [MJMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [MJIntroScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
     [skView presentScene:scene];
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+    
 }
 
 - (BOOL)shouldAutorotate

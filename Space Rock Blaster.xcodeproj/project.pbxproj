@@ -24,6 +24,21 @@
 		3625E7F119A1567C00197893 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3625E7CC19A1567B00197893 /* UIKit.framework */; };
 		3625E7F919A1567C00197893 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3625E7F719A1567C00197893 /* InfoPlist.strings */; };
 		3625E7FB19A1567C00197893 /* Space_Rock_BlasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E7FA19A1567C00197893 /* Space_Rock_BlasterTests.m */; };
+		3625E80619A15AF900197893 /* MJIntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E80519A15AF900197893 /* MJIntroScene.m */; };
+		3625E80919A15BC400197893 /* MJMainGamePlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E80819A15BC400197893 /* MJMainGamePlayScene.m */; };
+		3625E80C19A15BE600197893 /* MJGameOverNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E80B19A15BE600197893 /* MJGameOverNode.m */; };
+		3625E80F19A15C0C00197893 /* MJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E80E19A15C0C00197893 /* MJSettings.m */; };
+		3625E81219A15C6400197893 /* MJHudNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E81119A15C6400197893 /* MJHudNode.m */; };
+		3625E81519A15CB000197893 /* MJBackgroundNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E81419A15CB000197893 /* MJBackgroundNode.m */; };
+		3625E81819A15CCF00197893 /* MJFighterJet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E81719A15CCF00197893 /* MJFighterJet.m */; };
+		3625E81B19A15D1100197893 /* MJFlyingRockNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E81A19A15D1100197893 /* MJFlyingRockNode.m */; };
+		3625E81E19A15D2600197893 /* MJFighterProjectileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3625E81D19A15D2600197893 /* MJFighterProjectileNode.m */; };
+		3625E82519A1615600197893 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3625E82219A1615600197893 /* sprites.atlas */; };
+		3625E82C19A1617800197893 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3625E82719A1617800197893 /* OFL.txt */; };
+		3625E82D19A1617800197893 /* Orbitron-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3625E82819A1617800197893 /* Orbitron-Black.ttf */; };
+		3625E82E19A1617800197893 /* Orbitron-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3625E82919A1617800197893 /* Orbitron-Bold.ttf */; };
+		3625E82F19A1617800197893 /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3625E82A19A1617800197893 /* Orbitron-Medium.ttf */; };
+		3625E83019A1617800197893 /* Orbitron-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3625E82B19A1617800197893 /* Orbitron-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +75,30 @@
 		3625E7F619A1567C00197893 /* Space Rock BlasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space Rock BlasterTests-Info.plist"; sourceTree = "<group>"; };
 		3625E7F819A1567C00197893 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3625E7FA19A1567C00197893 /* Space_Rock_BlasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_Rock_BlasterTests.m; sourceTree = "<group>"; };
+		3625E80419A15AF900197893 /* MJIntroScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIntroScene.h; sourceTree = "<group>"; };
+		3625E80519A15AF900197893 /* MJIntroScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIntroScene.m; sourceTree = "<group>"; };
+		3625E80719A15BC400197893 /* MJMainGamePlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMainGamePlayScene.h; sourceTree = "<group>"; };
+		3625E80819A15BC400197893 /* MJMainGamePlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMainGamePlayScene.m; sourceTree = "<group>"; };
+		3625E80A19A15BE600197893 /* MJGameOverNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJGameOverNode.h; sourceTree = "<group>"; };
+		3625E80B19A15BE600197893 /* MJGameOverNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJGameOverNode.m; sourceTree = "<group>"; };
+		3625E80D19A15C0C00197893 /* MJSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJSettings.h; sourceTree = "<group>"; };
+		3625E80E19A15C0C00197893 /* MJSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJSettings.m; sourceTree = "<group>"; };
+		3625E81019A15C6400197893 /* MJHudNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJHudNode.h; sourceTree = "<group>"; };
+		3625E81119A15C6400197893 /* MJHudNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJHudNode.m; sourceTree = "<group>"; };
+		3625E81319A15CB000197893 /* MJBackgroundNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBackgroundNode.h; sourceTree = "<group>"; };
+		3625E81419A15CB000197893 /* MJBackgroundNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJBackgroundNode.m; sourceTree = "<group>"; };
+		3625E81619A15CCF00197893 /* MJFighterJet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFighterJet.h; sourceTree = "<group>"; };
+		3625E81719A15CCF00197893 /* MJFighterJet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFighterJet.m; sourceTree = "<group>"; };
+		3625E81919A15D1100197893 /* MJFlyingRockNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFlyingRockNode.h; sourceTree = "<group>"; };
+		3625E81A19A15D1100197893 /* MJFlyingRockNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFlyingRockNode.m; sourceTree = "<group>"; };
+		3625E81C19A15D2600197893 /* MJFighterProjectileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFighterProjectileNode.h; sourceTree = "<group>"; };
+		3625E81D19A15D2600197893 /* MJFighterProjectileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFighterProjectileNode.m; sourceTree = "<group>"; };
+		3625E82219A1615600197893 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		3625E82719A1617800197893 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		3625E82819A1617800197893 /* Orbitron-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Black.ttf"; sourceTree = "<group>"; };
+		3625E82919A1617800197893 /* Orbitron-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Bold.ttf"; sourceTree = "<group>"; };
+		3625E82A19A1617800197893 /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Medium.ttf"; sourceTree = "<group>"; };
+		3625E82B19A1617800197893 /* Orbitron-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,15 +160,35 @@
 		3625E7D019A1567B00197893 /* Space Rock Blaster */ = {
 			isa = PBXGroup;
 			children = (
+				3625E7E719A1567C00197893 /* Images.xcassets */,
+				3625E82619A1617800197893 /* fontOrbitron */,
+				3625E7DC19A1567C00197893 /* Main.storyboard */,
 				3625E7D919A1567C00197893 /* MJAppDelegate.h */,
 				3625E7DA19A1567C00197893 /* MJAppDelegate.m */,
-				3625E7DC19A1567C00197893 /* Main.storyboard */,
-				3625E7DF19A1567C00197893 /* MJViewController.h */,
-				3625E7E019A1567C00197893 /* MJViewController.m */,
+				3625E82219A1615600197893 /* sprites.atlas */,
+				3625E81319A15CB000197893 /* MJBackgroundNode.h */,
+				3625E81419A15CB000197893 /* MJBackgroundNode.m */,
+				3625E81619A15CCF00197893 /* MJFighterJet.h */,
+				3625E81719A15CCF00197893 /* MJFighterJet.m */,
+				3625E81C19A15D2600197893 /* MJFighterProjectileNode.h */,
+				3625E81D19A15D2600197893 /* MJFighterProjectileNode.m */,
+				3625E81919A15D1100197893 /* MJFlyingRockNode.h */,
+				3625E81A19A15D1100197893 /* MJFlyingRockNode.m */,
+				3625E80A19A15BE600197893 /* MJGameOverNode.h */,
+				3625E80B19A15BE600197893 /* MJGameOverNode.m */,
+				3625E81019A15C6400197893 /* MJHudNode.h */,
+				3625E81119A15C6400197893 /* MJHudNode.m */,
+				3625E80419A15AF900197893 /* MJIntroScene.h */,
+				3625E80519A15AF900197893 /* MJIntroScene.m */,
+				3625E80719A15BC400197893 /* MJMainGamePlayScene.h */,
+				3625E80819A15BC400197893 /* MJMainGamePlayScene.m */,
 				3625E7E219A1567C00197893 /* MJMyScene.h */,
 				3625E7E319A1567C00197893 /* MJMyScene.m */,
+				3625E80D19A15C0C00197893 /* MJSettings.h */,
+				3625E80E19A15C0C00197893 /* MJSettings.m */,
+				3625E7DF19A1567C00197893 /* MJViewController.h */,
+				3625E7E019A1567C00197893 /* MJViewController.m */,
 				3625E7E519A1567C00197893 /* Spaceship.png */,
-				3625E7E719A1567C00197893 /* Images.xcassets */,
 				3625E7D119A1567C00197893 /* Supporting Files */,
 			);
 			path = "Space Rock Blaster";
@@ -162,6 +221,19 @@
 				3625E7F719A1567C00197893 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3625E82619A1617800197893 /* fontOrbitron */ = {
+			isa = PBXGroup;
+			children = (
+				3625E82719A1617800197893 /* OFL.txt */,
+				3625E82819A1617800197893 /* Orbitron-Black.ttf */,
+				3625E82919A1617800197893 /* Orbitron-Bold.ttf */,
+				3625E82A19A1617800197893 /* Orbitron-Medium.ttf */,
+				3625E82B19A1617800197893 /* Orbitron-Regular.ttf */,
+			);
+			name = fontOrbitron;
+			path = Orbitron;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,9 +313,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3625E82C19A1617800197893 /* OFL.txt in Resources */,
+				3625E82519A1615600197893 /* sprites.atlas in Resources */,
+				3625E83019A1617800197893 /* Orbitron-Regular.ttf in Resources */,
+				3625E82F19A1617800197893 /* Orbitron-Medium.ttf in Resources */,
+				3625E82E19A1617800197893 /* Orbitron-Bold.ttf in Resources */,
 				3625E7D519A1567C00197893 /* InfoPlist.strings in Resources */,
 				3625E7E819A1567C00197893 /* Images.xcassets in Resources */,
 				3625E7E619A1567C00197893 /* Spaceship.png in Resources */,
+				3625E82D19A1617800197893 /* Orbitron-Black.ttf in Resources */,
 				3625E7DE19A1567C00197893 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +343,17 @@
 			files = (
 				3625E7D719A1567C00197893 /* main.m in Sources */,
 				3625E7E419A1567C00197893 /* MJMyScene.m in Sources */,
+				3625E80C19A15BE600197893 /* MJGameOverNode.m in Sources */,
 				3625E7E119A1567C00197893 /* MJViewController.m in Sources */,
+				3625E81E19A15D2600197893 /* MJFighterProjectileNode.m in Sources */,
 				3625E7DB19A1567C00197893 /* MJAppDelegate.m in Sources */,
+				3625E80919A15BC400197893 /* MJMainGamePlayScene.m in Sources */,
+				3625E81819A15CCF00197893 /* MJFighterJet.m in Sources */,
+				3625E81519A15CB000197893 /* MJBackgroundNode.m in Sources */,
+				3625E81219A15C6400197893 /* MJHudNode.m in Sources */,
+				3625E80619A15AF900197893 /* MJIntroScene.m in Sources */,
+				3625E81B19A15D1100197893 /* MJFlyingRockNode.m in Sources */,
+				3625E80F19A15C0C00197893 /* MJSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
